@@ -34,7 +34,7 @@ public class Meteor extends Entity{
 
     @Override
     public void update() {
-        fireBallMove();
+        meteorMove();
         updateAnimationTick();
     }
 
@@ -55,7 +55,7 @@ public class Meteor extends Entity{
         }
     }
     
-    private void fireBallMove(){
+    private void meteorMove(){
         if(direction == 0){
             y+=Speed;
             if(y>900){
